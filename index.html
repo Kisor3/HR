@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year Fuchii</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffc0cb; /* Pink background */
+      color: white;
+      text-align: center;
+    }
+
+    .page {
+      display: none;
+      padding: 50px 20px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1, p {
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .button {
+      background-color: #ff69b4;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff85c1;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page1" class="page active">
+    <h1>Happy New Year Fuchii</h1>
+    <p>I love youuuuuuuuuuuuu</p>
+    <button class="button" onclick="showPage2()">Continue</button>
+  </div>
+
+  <div id="page2" class="page">
+    <h1>Thank you fuchi</h1>
+    <p>
+      I mean I love you a lot ani hai aja k k vanxu vanera socheko thiye<br>
+      tara kahe vana sakina i guess first time vayera hola<br>
+      but maja aayo ma yo din bersina sakdina<br>
+      ani tme kasto cuteeee kya<br>
+      ani tmero yaddd aaeyako xa like feri jana man lageyako xa<br>
+      yespali chai vagdina hau tyo k vayo k vayo tete khera<br>
+      but aba gardina<br>
+      tara maja aayo malai like tme sanga hidha boldha tmelai herdha maja aayo<br>
+      ani hat rakhdha samatdha i feel safe ani happy new year fuchuuuuu<br>
+      ani thank you so muchhhh<br>
+      ani Muaaaahhh ani byee
+    </p>
+  </div>
+
+  <script>
+    function showPage2() {
+      document.getElementById("page1").classList.remove("active");
+      document.getElementById("page2").classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
